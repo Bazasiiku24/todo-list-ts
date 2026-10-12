@@ -1,0 +1,67 @@
+
+  body {
+    font-family: sans-serif;
+    max-width: 480px;
+    margin: 40px auto;
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  /* 入力欄とボタンをまとめるエリア */
+  .input-area {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  #todo-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  #add-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* タスクを並べるリスト本体。JSでここに<li>を追加していく */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  /* 完了済みタスクにJSでこのクラスを付け外しする想定 */
+  #todo-list li.completed .todo-text {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+
+  .todo-text {
+    flex: 1;
+    cursor: pointer; /* クリックで完了/未完了を切り替える想定 */
+  }
+
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+  }

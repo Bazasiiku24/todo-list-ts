@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-ts</title>
+  </head>
+  <body>
+    <h1>ToDoリスト</h1>
+
+  <div class="input-area">
+    <!-- ここに入力されたテキストを取得する -->
+    <input type="text" id="todo-input" placeholder="タスクを入力">
+    <!-- クリックで追加処理を呼ぶ -->
+    <button id="add-btn">追加</button>
+  </div>
+
+  <!-- JSでここに<li>要素を作って追加していく -->
+  <ul id="todo-list">
+    <!-- 例: 完成イメージ(実際はJSで生成する)
+    <li data-id="1">
+      <span class="todo-text">サンプルタスク</span>
+      <button class="delete-btn">削除</button>
+    </li>
+    -->
+  </ul>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
